@@ -4,6 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Properties;
 
 /**
@@ -41,5 +44,18 @@ public class DBUtil {
         url=properties.getProperty("url");
         dbName=properties.getProperty("dbName");
         dbPassWd=properties.getProperty("dbPassWd");
+    }
+
+    public Connection openConnection(){                     //获得一个数据库的链接
+        Connection connection = null;                       //定义接口connection，作为引用结果返回
+        try {
+            Class.forName(driver);                          //注册的 JDBC 驱动程序
+            connection = DriverManager.getConnection(url,dbName,dbPassWd);//建立制定url的数据库链接
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return connection;
     }
 }
