@@ -1,8 +1,12 @@
+package com.GAME;
+
 /**
  * Created by lewis on 2016/11/30.
+ *
  */
 public class Game2048 {
-    public static void main(String []args){
 
-    }
+   public void start(){
+
+   }
 }
