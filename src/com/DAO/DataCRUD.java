@@ -1,20 +1,16 @@
 package com.DAO;
 
-import com.DAO.DBUtil;
 import java.sql.*;
-import static java.lang.System.out;
-
 
 /**
  * Created by lewis on 2016/11/30.
- * 本类提供数据的增删改查
+ * 本类提供数据的增改查
  *
  */
 public class DataCRUD {
     private static Connection connection = null;                           //数据库的连接（会话）
     private static ResultSet resultSet = null;                             //表示数据库结果集的数据表
     private static PreparedStatement preparedStatement = null;             //表示预编译的 SQL 语句的对象。
-
 
     public static void Create(int secore ,String playerName){                               //增加
         String sql = "insert into rank(secore,playername) values(?,?);";
@@ -45,10 +41,10 @@ public class DataCRUD {
     }
 
     public static void Update(int secore , String playerName){                              //更新
-        String sql = "UPDATE rank SET secore = ? WHERE (playername = ? AND secore < ?);";
+        String sql = "UPDATE rank SET secore = ? WHERE (playername = ? AND secore < ?);";   //查找到账号，并且判断他的分数是否比当前的分数
         connection = new DBUtil().openConnection();
         try {
-            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement = connection.prepareStatement(sql);                           //设置参数
             preparedStatement.setInt(1,secore);
             preparedStatement.setString(2,playerName);
             preparedStatement.setInt(3,secore);
@@ -58,10 +54,6 @@ public class DataCRUD {
         } finally {
             ReleaseConnection();
         }
-    }
-
-    public static void Delete(String playerName){                                            //删除
-        String sql = "";
     }
 
     public static void ReleaseConnection() {                                                 //释放数据链接
@@ -84,7 +76,6 @@ public class DataCRUD {
     }
 
     public static void main(String []args){
-
 //      1.test Create
 //       new DataCRUD().Create(444,"h");
 
@@ -104,8 +95,5 @@ public class DataCRUD {
 //        } finally {
 //            ReleaseConnection();
 //        }
-
-
-
     }
 }
