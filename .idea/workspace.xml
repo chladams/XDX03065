@@ -32,17 +32,17 @@
       <file leaf-file-name="DataCRUD.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/DAO/DataCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1518">
-              <caret line="96" column="8" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+            <state relative-caret-position="-351">
+              <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Create#0;class#DataCRUD#0" expanded="false" />
-                <element signature="e#1760#1761#0" expanded="true" />
-                <element signature="e#1825#1826#0" expanded="true" />
-                <element signature="e#1876#1877#0" expanded="true" />
-                <element signature="e#1955#1956#0" expanded="true" />
-                <marker date="1480578297214" expanded="true" signature="572:619" ph="insert into rank... " />
-                <marker date="1480578297214" expanded="true" signature="1271:1310" ph="select * fro... rank" />
+                <element signature="e#1721#1722#0" expanded="true" />
+                <element signature="e#1786#1787#0" expanded="true" />
+                <element signature="method#ReleaseConnection#0;class#DataCRUD#0" expanded="false" />
+                <marker date="1480578834539" expanded="true" signature="572:619" ph="insert into rank... " />
+                <marker date="1480578834539" expanded="true" signature="1261:1300" ph="SELECT * FRO... rank" />
+                <marker date="1480578834539" expanded="true" signature="1267:1279" ph="select * fro... rank" />
               </folding>
             </state>
           </provider>
@@ -63,8 +63,8 @@
       <file leaf-file-name="db.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/DAO/db.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="92">
+              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -667,12 +667,12 @@
       <workItem from="1480487012146" duration="1018000" />
       <workItem from="1480488061863" duration="8990000" />
       <workItem from="1480519937344" duration="6286000" />
-      <workItem from="1480567771333" duration="7524000" />
+      <workItem from="1480567771333" duration="8058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23818000" />
+    <option name="totallyTimeSpent" value="24352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -688,7 +688,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.346211" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22734027" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -934,14 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/DAO/db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/sql/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -960,19 +952,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/DAO/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/DAO/DataCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="96" column="8" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+        <state relative-caret-position="-351">
+          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Create#0;class#DataCRUD#0" expanded="false" />
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1825#1826#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1955#1956#0" expanded="true" />
-            <marker date="1480578297214" expanded="true" signature="572:619" ph="insert into rank... " />
-            <marker date="1480578297214" expanded="true" signature="1271:1310" ph="select * fro... rank" />
+            <element signature="e#1721#1722#0" expanded="true" />
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="method#ReleaseConnection#0;class#DataCRUD#0" expanded="false" />
+            <marker date="1480578834539" expanded="true" signature="572:619" ph="insert into rank... " />
+            <marker date="1480578834539" expanded="true" signature="1261:1300" ph="SELECT * FRO... rank" />
+            <marker date="1480578834539" expanded="true" signature="1267:1279" ph="select * fro... rank" />
           </folding>
         </state>
       </provider>

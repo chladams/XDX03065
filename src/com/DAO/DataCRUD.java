@@ -33,12 +33,11 @@ public class DataCRUD {
         }
     }
 
-    public ResultSet Query(String playerName) {                                           //读取查询
-        String sql = "select * from rank where playername = ?";
+    public ResultSet Query() {                                                  //读取查询
+        String sql = "SELECT * FROM rank ORDER BY secore DESC;";             //按照分数大小降序排列
         connection = new DBUtil().openConnection();
         try {
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1,playerName);
             resultSet = preparedStatement.executeQuery();
             return resultSet;
         } catch (SQLException e) {
@@ -77,23 +76,23 @@ public class DataCRUD {
     public static void main(String []args){
 
 //      1.test Create
-//      new DataCRUD().Create(0,"admin");
+//       new DataCRUD().Create(444,"h");
 
 //       2. test Query
-//       ResultSet rs = new DataCRUD().Query("admin");
-//        try {
-//            while(rs.next()){
-//                int s = rs.getInt(1);
-//                String n = rs.getString(2);
-//                out.printf("%d %s\n",s,n);
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        } finally {
-//            ReleaseConnection();
-//        }
+       ResultSet rs = new DataCRUD().Query();
+        try {
+            while(rs.next()){
+                int s = rs.getInt(1);
+                String n = rs.getString(2);
+                out.printf("%d %s\n",s,n);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            ReleaseConnection();
+        }
 
 
-        
+
     }
 }
