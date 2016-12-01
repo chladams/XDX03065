@@ -24,7 +24,7 @@ public class DBUtil {
         Properties properties = new Properties();       //实例化一个Properties类，保存和读取配置文件的键值对
         Reader in =null;                                //通过Reader接口实例化一个文件字符流
         try {
-            in =new FileReader("config.properties");
+            in =new FileReader("src//com//DAO//config.properties");
             properties.load(in);                        //按简单的面向行的格式从输入字符流中读取属性列表（键和元素对）。
         } catch (FileNotFoundException e) {
             e.printStackTrace();
