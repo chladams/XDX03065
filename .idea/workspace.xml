@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="056eba8a-6892-49a9-9940-afc288ec1e4c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/DAO/DBUtil.java" afterPath="$PROJECT_DIR$/src/com/DAO/DBUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/DAO/DataCRUD.java" afterPath="$PROJECT_DIR$/src/com/DAO/DataCRUD.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,20 +32,17 @@
       <file leaf-file-name="DataCRUD.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/DAO/DataCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="1518">
+              <caret line="96" column="8" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
-                <element signature="e#1350#1351#0" expanded="true" />
-                <element signature="e#1407#1408#0" expanded="true" />
-                <element signature="e#1472#1473#0" expanded="true" />
-                <element signature="e#1516#1517#0" expanded="true" />
-                <element signature="e#1595#1596#0" expanded="true" />
-                <element signature="method#ReleaseConnection#0;class#DataCRUD#0" expanded="false" />
-                <element signature="e#2326#2327#0" expanded="true" />
-                <element signature="e#2375#2376#0" expanded="true" />
-                <marker date="1480574484050" expanded="true" signature="610:657" ph="insert into rank... " />
+                <element signature="method#Create#0;class#DataCRUD#0" expanded="false" />
+                <element signature="e#1760#1761#0" expanded="true" />
+                <element signature="e#1825#1826#0" expanded="true" />
+                <element signature="e#1876#1877#0" expanded="true" />
+                <element signature="e#1955#1956#0" expanded="true" />
+                <marker date="1480578297214" expanded="true" signature="572:619" ph="insert into rank... " />
+                <marker date="1480578297214" expanded="true" signature="1271:1310" ph="select * fro... rank" />
               </folding>
             </state>
           </provider>
@@ -113,8 +108,8 @@
         <option value="$PROJECT_DIR$/src/com/DAO/config.properties" />
         <option value="$PROJECT_DIR$/src/com/DAO/README.md" />
         <option value="$PROJECT_DIR$/src/com/AI/README.md" />
-        <option value="$PROJECT_DIR$/src/com/DAO/DataCRUD.java" />
         <option value="$PROJECT_DIR$/src/com/DAO/DBUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/DAO/DataCRUD.java" />
       </list>
     </option>
   </component>
@@ -672,12 +667,12 @@
       <workItem from="1480487012146" duration="1018000" />
       <workItem from="1480488061863" duration="8990000" />
       <workItem from="1480519937344" duration="6286000" />
-      <workItem from="1480567771333" duration="5564000" />
+      <workItem from="1480567771333" duration="7524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21858000" />
+    <option name="totallyTimeSpent" value="23818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -693,7 +688,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20653789" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.346211" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -722,7 +717,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -967,20 +962,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/DAO/DataCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="1518">
+          <caret line="96" column="8" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1595#1596#0" expanded="true" />
-            <element signature="method#ReleaseConnection#0;class#DataCRUD#0" expanded="false" />
-            <element signature="e#2326#2327#0" expanded="true" />
-            <element signature="e#2375#2376#0" expanded="true" />
-            <marker date="1480574484050" expanded="true" signature="610:657" ph="insert into rank... " />
+            <element signature="method#Create#0;class#DataCRUD#0" expanded="false" />
+            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#1825#1826#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <marker date="1480578297214" expanded="true" signature="572:619" ph="insert into rank... " />
+            <marker date="1480578297214" expanded="true" signature="1271:1310" ph="select * fro... rank" />
           </folding>
         </state>
       </provider>
