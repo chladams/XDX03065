@@ -6,4 +6,4 @@
 
 3.DBUtil.java 实现数据库的链接，以及返回类的实例化
 
-4.DataCRUD 实现数据库的 增加(Create)、读取查询(Retrieve)、更新(Update)和删除(Delete)
+4.DataCRUD 实现数据库的 增加(Create)、读取查询(Query)、更新(Update)
