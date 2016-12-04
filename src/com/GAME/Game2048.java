@@ -95,13 +95,25 @@ public class Game2048 extends JPanel{
                }
             }
 
-            if(!myWin&&!canMove()){                      //若没到达赢的局面而且无法移动则判断为输
+            if(!myWin&&!canMove()) {                      //若没到达赢的局面而且无法移动则判断为输
                myLose = true;
             }
-
             repaint();
          }
       });
+      resetGame();
+   }
+
+   @Override
+   public void paint(Graphics g) {                                         
+      super.paint(g);
+      g.setColor(BG_COLOR);                                                //设置背景色
+      g.fillRect(0,0,this.getSize().width,this.getSize().height);    //画出背景的矩形
+      for(int y=0 ;y<4;y++){
+         for(int x=0;x<4;x++){
+            drawTile(g,MyTiles[x+y*4],x,y);                                //画出小块
+         }
+      }
    }
 
    public void resetGame(){                              //重置游戏
@@ -128,9 +140,7 @@ public class Game2048 extends JPanel{
 
    }
 
-   @Override
-   public void print(Graphics g) {
+   private void drawTile(Graphics g,Tile tile,int x,int y){
 
    }
-
 }
