@@ -2,6 +2,8 @@ package com.GAME;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 /**
  * Created by lewis on 2016/11/30.
@@ -12,6 +14,12 @@ public class Game2048 extends JPanel{
    private static final String  FONT_NAME = "lewis";
    private static int TILE_SIZE = 64;
    private static int TILES_MARGIN = 16;
+
+   private Tile[] MyTiles;
+   boolean myWin = false;
+   boolean myLose = false;
+   int myScore = 0;
+
 
    static class Tile{                                                 //小块类
       int value;                                                       //设置当前的小块的分数
@@ -61,10 +69,68 @@ public class Game2048 extends JPanel{
 
    }
 
-   @Override
-   public void print(Graphics g) {
-      super.print(g);
+   public Game2048(){
+      setFocusable(true);                                //将此 Component 的焦点状态设置为指定值。此值覆盖 Component 的默认焦点状态。
+      addKeyListener(new KeyAdapter() {
+         @Override
+         public void keyPressed(KeyEvent e) {            //添加按键监听器
+            if(e.getKeyCode()==KeyEvent.VK_ESCAPE){      //若按ESC键，则重置游戏
+               resetGame();
+            }
+
+            if(!canMove()){                              //若无法移动，则判断为输
+               myLose = true;
+            }
+
+            if(!myWin&&!myLose){                         //若在中间状态，则继续移动游戏
+               switch(e.getKeyCode()){
+                  case KeyEvent.VK_LEFT:
+                     left();break;
+                  case KeyEvent.VK_RIGHT:
+                     right();break;
+                  case KeyEvent.VK_UP:
+                     up();break;
+                  case KeyEvent.VK_DOWN:
+                     down();break;
+               }
+            }
+
+            if(!myWin&&!canMove()){                      //若没到达赢的局面而且无法移动则判断为输
+               myLose = true;
+            }
+
+            repaint();
+         }
+      });
    }
 
+   public void resetGame(){                              //重置游戏
+
+   }
+
+   public boolean canMove(){                             //判断当前局面是否能否移动
+      return true;
+   }
+
+   public void left(){                                    //向左移动
+
+   }
+
+   public void right(){                                  //向右移动
+
+   }
+
+   public void up(){                                     //向上移动
+
+   }
+
+   public void down(){                                   //向下移动
+
+   }
+
+   @Override
+   public void print(Graphics g) {
+
+   }
 
 }
