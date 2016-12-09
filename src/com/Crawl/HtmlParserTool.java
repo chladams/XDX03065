@@ -7,5 +7,10 @@ package com.Crawl;
  */
 public class HtmlParserTool {
 
+    public static String Parser(String html){
+
+
+        return null;
+    }
 
 }

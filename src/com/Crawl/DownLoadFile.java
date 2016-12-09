@@ -6,4 +6,6 @@ package com.Crawl;
  * 主要提供文件的下载，html源文件，图片等文件。
  */
 public class DownLoadFile {
+
+
 }
