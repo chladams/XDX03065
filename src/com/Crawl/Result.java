@@ -12,7 +12,6 @@ public class Result {
     private String context;
     private ArrayList<String> urlLink ;
 
-
     public String getTitle() {
         return title;
     }
