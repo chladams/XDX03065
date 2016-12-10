@@ -1,5 +1,7 @@
 package com.DAO;
 
+import com.Crawl.Result;
+
 import java.sql.*;
 
 /**
@@ -73,6 +75,11 @@ public class DataCRUD {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void persistent(Result result){
+        //TODO
+
     }
 
     public static void main(String []args){

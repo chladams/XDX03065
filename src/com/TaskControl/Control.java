@@ -8,5 +8,4 @@ package com.TaskControl;
  */
 public class Control {
 
-
 }

@@ -66,16 +66,4 @@ public class HtmlParserTool {
         result.setUrlLink(ParserLink(html));
         return result;
     }
-
-    public static void main(String []args){
-        Result re=getResult("http://baike.baidu.com/item/清华大学");
-        print(re.getContext());
-        print(re.getTitle());
-        print(re.getUrlLink());
-
-    }
-
-    public static <T> void print(T s){
-        System.out.print(s);
-    }
 }
