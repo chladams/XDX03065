@@ -39,18 +39,22 @@ public class HtmlParserTool {
     public static String ParasContext(String html){
         StringBuffer context = new StringBuffer();
         Document dom = Jsoup.parse(html);
-        Elements elements = dom.select("h1");
+        Elements elements = dom.getElementsByClass("para");
         for(Element element:elements){
-            context.append(element.text());                              //获取h1标签的内容
+            context.append(element.text()+"\n");
         }
 
         return context.toString();
     }
 
-    public static String ParasTitle(String Html){
+    public static String ParasTitle(String html){
+
         StringBuffer title = new StringBuffer();
-
-
+        Document dom = Jsoup.parse(html);
+        Elements elements = dom.select("h1");
+        for(Element element:elements){
+            title.append(element.text());                              //获取h1标签的内容
+        }
         return title.toString();
     }
 
@@ -64,15 +68,14 @@ public class HtmlParserTool {
     }
 
     public static void main(String []args){
-//        ArrayList<String> links = ParserLink("http://baike.baidu.com/item/清华大学");
-//        for(String link:links){
-//            System.out.println(link);
-//        }
-
-    getResult("http://baike.baidu.com/item/清华大学");
+        Result re=getResult("http://baike.baidu.com/item/清华大学");
+        print(re.getContext());
+        print(re.getTitle());
+        print(re.getUrlLink());
 
     }
+
     public static <T> void print(T s){
-        System.out.println(s);
+        System.out.print(s);
     }
 }
