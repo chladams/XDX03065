@@ -1,6 +1,6 @@
 package com.GUI;
 
-import com.Crawl.ManngerClawler;
+import com.Crawl.ManagerCrawler;
 
 import javax.swing.*;
 
@@ -10,8 +10,11 @@ import javax.swing.*;
  * 作为数据显示的页面
  */
 public class BaiduBaike extends JFrame{
-    public ManngerClawler manngerClawler = new ManngerClawler();
+    public ManagerCrawler managerCrawler = new ManagerCrawler();
 
-
+    public void launch(String url){
+        managerCrawler.initial(url);
+        managerCrawler.start();
+    }
 
 }
