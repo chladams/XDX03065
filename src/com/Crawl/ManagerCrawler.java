@@ -22,6 +22,7 @@ public class ManagerCrawler {
     public static Result queueTop = new Result();                                            //队首
     public static Crawler crawler = null;                                                   //爬虫类
     public static int count = 0;
+    public static final int MAX_PAGE = 10;
 
 
     public ManagerCrawler initial(String url){                                                        //由一个url初始化爬虫
@@ -34,21 +35,23 @@ public class ManagerCrawler {
 
     public void start(){
 
-        while(results.size()>0 && count<=10){
+        while(results.size()>0 && count<MAX_PAGE){
             queueTop = results.poll();                                              //取出队头，并且pop
             DataCRUD.persistent(queueTop);                                          //持久化到数据库
             ArrayList< FutureTask<Result> > tasks = new ArrayList<>();               //为每个链接分出一个线程去运行
 
-            for(String link:queueTop.getUrlLink()) {                                //扩展队头
-                unique.add(link);                                                   //添加到过滤器，去重
-                crawler = new Crawler(link);                                       //实例化一个爬虫类
-                tasks.add(new FutureTask<>(crawler));                               //加入到任务数组中
+            for(String link:queueTop.getUrlLink()) {                                    //扩展队头
+                if(!unique.contains(link)) {                                            //若没有爬取过这个页面
+                    unique.add(link);                                                   //添加到过滤器，去重
+                    crawler = new Crawler(link);                                       //实例化一个爬虫类
+                    tasks.add(new FutureTask<>(crawler));                               //加入到任务数组中
+                }
             }
 
             for(FutureTask<Result> task:tasks){                                     //线程池执行数组的线程
                 crawlPool.submit(task);
                 count++;
-                if(count>10){
+                if(count>MAX_PAGE){
                     break ;
                 }
             }

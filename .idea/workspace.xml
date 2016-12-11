@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="056eba8a-6892-49a9-9940-afc288ec1e4c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/XDX03065/com/Crawl/ManngerClawler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/Crawl/ManngerClawler.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/XDX03065/com/Crawl/HtmlParserTool.class" afterPath="$PROJECT_DIR$/out/production/XDX03065/com/Crawl/HtmlParserTool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/XDX03065/com/DAO/DataCRUD.class" afterPath="$PROJECT_DIR$/out/production/XDX03065/com/DAO/DataCRUD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/XDX03065/com/GUI/BaiduBaike.class" afterPath="$PROJECT_DIR$/out/production/XDX03065/com/GUI/BaiduBaike.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/XDX03065/com/DAO/db.sql" afterPath="$PROJECT_DIR$/out/production/XDX03065/com/DAO/db.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Crawl/Crawler.java" afterPath="$PROJECT_DIR$/src/com/Crawl/Crawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/DAO/db.sql" afterPath="$PROJECT_DIR$/src/com/DAO/db.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/GUI/BaiduBaike.java" afterPath="$PROJECT_DIR$/src/com/GUI/BaiduBaike.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java" afterPath="$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +32,8 @@
       <file leaf-file-name="ManagerCrawler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="57" column="76" lean-forward="false" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
+            <state relative-caret-position="253">
+              <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -301,10 +291,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -866,16 +852,16 @@
       <workItem from="1481422927481" duration="2220000" />
       <workItem from="1481433120110" duration="5226000" />
       <workItem from="1481440543974" duration="2731000" />
-      <workItem from="1481471069323" duration="2455000" />
+      <workItem from="1481471069323" duration="3029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88683000" />
+    <option name="totallyTimeSpent" value="89257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -887,12 +873,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32838038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15592971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18887262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1251,8 +1237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="57" column="76" lean-forward="false" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
+        <state relative-caret-position="253">
+          <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
