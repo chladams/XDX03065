@@ -4,6 +4,8 @@ import com.Crawl.Result;
 
 import java.sql.*;
 
+import static java.lang.System.out;
+
 /**
  * Created by lewis on 2016/11/30.
  * 本类提供数据的增改查
@@ -14,13 +16,14 @@ public class DataCRUD {
     private static ResultSet resultSet = null;                             //表示数据库结果集的数据表
     private static PreparedStatement preparedStatement = null;             //表示预编译的 SQL 语句的对象。
 
-    public static void Create(int secore ,String playerName){                               //增加
-        String sql = "insert into rank(secore,playername) values(?,?);";
+
+    public static void Create(String title,String context){                               //增加
+        String sql = "insert into text(title,context) values(?,?);";
         connection = new DBUtil().openConnection();                                 //建立连接
         try {
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1,secore);                     //填充参数
-            preparedStatement.setString(2,playerName);
+            preparedStatement.setString(1,title);                     //填充参数
+            preparedStatement.setString(2,context);
             preparedStatement.execute();                                            // 执行
         } catch (SQLException e) {
             e.printStackTrace();
@@ -30,7 +33,7 @@ public class DataCRUD {
     }
 
     public static ResultSet Query() {                                                  //读取查询
-        String sql = "SELECT * FROM rank ORDER BY secore DESC;";             //按照分数大小降序排列
+        String sql = "SELECT * FROM text;";                                          //按照分数大小降序排列
         connection = new DBUtil().openConnection();
         try {
             preparedStatement = connection.prepareStatement(sql);
@@ -42,21 +45,6 @@ public class DataCRUD {
         return resultSet;
     }
 
-    public static void Update(int secore , String playerName){                              //更新
-        String sql = "UPDATE rank SET secore = ? WHERE (playername = ? AND secore < ?);";   //查找到账号，并且判断他的分数是否比当前的分数
-        connection = new DBUtil().openConnection();
-        try {
-            preparedStatement = connection.prepareStatement(sql);                           //设置参数
-            preparedStatement.setInt(1,secore);
-            preparedStatement.setString(2,playerName);
-            preparedStatement.setInt(3,secore);
-            preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            ReleaseConnection();
-        }
-    }
 
     public static void ReleaseConnection() {                                                 //释放数据链接
         try {
@@ -78,8 +66,7 @@ public class DataCRUD {
     }
 
     public static void persistent(Result result){
-        //TODO
-
+        Create(result.getTitle(),result.getContext());
     }
 
     public static void main(String []args){
@@ -90,17 +77,17 @@ public class DataCRUD {
 //        Update(10000,"a");
 
 //       3. test Query
-//       ResultSet rs = new DataCRUD().Query();
-//        try {
-//            while(rs.next()){
-//                int s = rs.getInt(1);
-//                String n = rs.getString(2);
-//                out.printf("%d %s\n",s,n);
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        } finally {
-//            ReleaseConnection();
-//        }
+       ResultSet rs = new DataCRUD().Query();
+        try {
+            while(rs.next()){
+                String s = rs.getString(1);
+                String n = rs.getString(2);
+                out.printf("%s %s\n",s,n);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            ReleaseConnection();
+        }
     }
 }

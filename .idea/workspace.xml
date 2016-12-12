@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="056eba8a-6892-49a9-9940-afc288ec1e4c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/XDX03065/com/Crawl/ManagerCrawler.class" afterPath="$PROJECT_DIR$/out/production/XDX03065/com/Crawl/ManagerCrawler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java" afterPath="$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/DAO/DataCRUD.java" afterPath="$PROJECT_DIR$/src/com/DAO/DataCRUD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/DAO/config.properties" afterPath="$PROJECT_DIR$/src/com/DAO/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/DAO/db.sql" afterPath="$PROJECT_DIR$/src/com/DAO/db.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,17 +32,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ManagerCrawler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ManagerCrawler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="868">
+              <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#initial#0;class#ManagerCrawler#0" expanded="false" />
-                <element signature="method#start#0;class#ManagerCrawler#0" expanded="false" />
-                <element signature="method#main#0;class#ManagerCrawler#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataCRUD.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/DAO/DataCRUD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#ReleaseConnection#0;class#DataCRUD#0" expanded="false" />
+                <element signature="e#2299#2300#0" expanded="true" />
+                <element signature="e#2360#2361#0" expanded="true" />
+                <marker date="1481513825732" expanded="true" signature="577:620" ph="insert into rank... " />
+                <marker date="1481513825732" expanded="true" signature="1268:1286" ph="SELECT * FRO... rank" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/DAO/DBUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,7 +105,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Game2048.java" />
-        <option value="$PROJECT_DIR$/src/com/DAO/config.properties" />
         <option value="$PROJECT_DIR$/src/com/AI/README.md" />
         <option value="$PROJECT_DIR$/src/com/DAO/DBUtil.java" />
         <option value="$PROJECT_DIR$/src/com/DAO/README.md" />
@@ -99,16 +123,17 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/Crawl/Result.java" />
         <option value="$PROJECT_DIR$/src/com/Crawl/BloomFilter.java" />
-        <option value="$PROJECT_DIR$/src/com/DAO/DataCRUD.java" />
         <option value="$PROJECT_DIR$/src/com/TaskControl/Control.java" />
-        <option value="$PROJECT_DIR$/src/com/DAO/db.sql" />
         <option value="$PROJECT_DIR$/src/com/Crawl/ManngerClawler.java" />
         <option value="$PROJECT_DIR$/src/com/Crawl/ManagerClawler.java" />
         <option value="$PROJECT_DIR$/src/com/GUI/BaiduBaike.java" />
         <option value="$PROJECT_DIR$/src/com/Crawl/Crawler.java" />
         <option value="$PROJECT_DIR$/src/com/Crawl/DownLoadFile.java" />
         <option value="$PROJECT_DIR$/src/com/Crawl/HtmlParserTool.java" />
+        <option value="$PROJECT_DIR$/src/com/DAO/config.properties" />
         <option value="$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java" />
+        <option value="$PROJECT_DIR$/src/com/DAO/DataCRUD.java" />
+        <option value="$PROJECT_DIR$/src/com/DAO/db.sql" />
       </list>
     </option>
   </component>
@@ -253,6 +278,10 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -297,27 +326,7 @@
       <recent name="C:\Users\lewis\XDX03065" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ManagerCrawler">
-    <configuration default="false" name="DownLoadFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.Crawl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.Crawl.DownLoadFile" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="XDX03065" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.DataCRUD">
     <configuration default="false" name="HtmlParserTool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -386,6 +395,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.Crawl.ManagerCrawler" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="XDX03065" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DataCRUD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.DAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.DAO.DataCRUD" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -756,19 +785,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.DownLoadFile" />
-      <item index="1" class="java.lang.String" itemvalue="Application.HtmlParserTool" />
-      <item index="2" class="java.lang.String" itemvalue="Application.BloomFilter" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ManngerClawler" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ManagerCrawler" />
+      <item index="0" class="java.lang.String" itemvalue="Application.HtmlParserTool" />
+      <item index="1" class="java.lang.String" itemvalue="Application.BloomFilter" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ManngerClawler" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ManagerCrawler" />
+      <item index="4" class="java.lang.String" itemvalue="Application.DataCRUD" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ManagerCrawler" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ManngerClawler" />
-        <item index="2" class="java.lang.String" itemvalue="Application.BloomFilter" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HtmlParserTool" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DownLoadFile" />
+        <item index="0" class="java.lang.String" itemvalue="Application.DataCRUD" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ManagerCrawler" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ManngerClawler" />
+        <item index="3" class="java.lang.String" itemvalue="Application.BloomFilter" />
+        <item index="4" class="java.lang.String" itemvalue="Application.HtmlParserTool" />
       </list>
     </recent_temporary>
   </component>
@@ -811,12 +840,12 @@
       <workItem from="1481433120110" duration="5226000" />
       <workItem from="1481440543974" duration="2731000" />
       <workItem from="1481471069323" duration="3180000" />
-      <workItem from="1481508431126" duration="2698000" />
+      <workItem from="1481508431126" duration="4902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92106000" />
+    <option name="totallyTimeSpent" value="94310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -832,7 +861,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25557205" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35661218" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -861,7 +890,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="33" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -986,13 +1015,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/GAME/Game2048.java" />
     <entry file="file://$PROJECT_DIR$/src/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/DAO/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ProxyPool/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1084,46 +1106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/DAO/DBUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/DAO/DataCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Create#0;class#DataCRUD#0" expanded="false" />
-            <element signature="method#Query#0;class#DataCRUD#0" expanded="false" />
-            <element signature="method#Update#0;class#DataCRUD#0" expanded="false" />
-            <element signature="method#ReleaseConnection#0;class#DataCRUD#0" expanded="false" />
-            <marker date="1481390966870" expanded="true" signature="541:588" ph="insert into rank... " />
-            <marker date="1481390966870" expanded="true" signature="1237:1276" ph="SELECT * FRO... rank" />
-            <marker date="1481390966870" expanded="true" signature="1755:1819" ph="UPDATE rank " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Crawl/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Crawl/BloomFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Crawl/ManngerClawler.java" />
     <entry file="file://$PROJECT_DIR$/src/com/Crawl/ManagerClawler.java" />
     <entry file="file://$PROJECT_DIR$/src/com/Crawl/README.MD">
@@ -1136,26 +1118,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/DAO/db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/util/concurrent/FutureTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-115">
           <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Crawl/DownLoadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1170,7 +1136,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Crawl/HtmlParserTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="139">
           <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1178,26 +1144,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Crawl/DownLoadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-436">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Crawl/Crawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
+        <state relative-caret-position="1">
           <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Crawl/BloomFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-344">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Crawl/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Crawl/ManagerCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="868">
+          <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#initial#0;class#ManagerCrawler#0" expanded="false" />
-            <element signature="method#start#0;class#ManagerCrawler#0" expanded="false" />
-            <element signature="method#main#0;class#ManagerCrawler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/DAO/DBUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/DAO/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/DAO/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/DAO/DataCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ReleaseConnection#0;class#DataCRUD#0" expanded="false" />
+            <element signature="e#2299#2300#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+            <marker date="1481513825732" expanded="true" signature="577:620" ph="insert into rank... " />
+            <marker date="1481513825732" expanded="true" signature="1268:1286" ph="SELECT * FRO... rank" />
           </folding>
         </state>
       </provider>

@@ -55,8 +55,9 @@ public class ManagerCrawler {
                 try {
                     Result taskResult = task.get(2, TimeUnit.SECONDS);      //获取线程的结果,设置每个线程的超时时间为1s
                     if(!taskResult.getTitle().equals("")){                            //过滤掉误爬的链接
-                        //out.println(taskResult.getTitle());
+                        out.println(taskResult.getTitle());
                         resultsQueue.add(taskResult);
+                        DataCRUD.persistent(taskResult);
                         count++;
                     }
                 } catch (InterruptedException e) {

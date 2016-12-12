@@ -1,10 +1,9 @@
 CREATE database Crawl;
 use Crawl;
-CREATE TABLE rank
+CREATE TABLE text
 (
-  secore int,
-  playername varchar(20),
-  PRIMARY KEY (secore)
+  title mediumtext,
+  context mediumtext
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
