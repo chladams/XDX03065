@@ -15,7 +15,8 @@ public class Crawler implements Callable<Result>{
 
     @Override
     public Result call() throws Exception {
-        return HtmlParserTool.getResult(url);
+        HtmlParserTool parserTool = new HtmlParserTool();
+        return parserTool.getResult(url);
     }
 
     public String getLinks() {

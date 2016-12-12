@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class HtmlParserTool {
 
-    public static ArrayList<String> ParserLink(String html){
+    public  ArrayList<String> ParserLink(String html){
 
         Document dom =  Jsoup.parse(html);            //public static Document parse(String html, String baseUri)
         Elements paras = dom.getElementsByClass("para");        //class选择器,获取div为para的内容
@@ -36,7 +36,7 @@ public class HtmlParserTool {
         return links;
     }
 
-    public static String ParasContext(String html){
+    public  String ParasContext(String html){
         StringBuffer context = new StringBuffer();
         Document dom = Jsoup.parse(html);
         Elements elements = dom.getElementsByClass("para");
@@ -47,7 +47,7 @@ public class HtmlParserTool {
         return context.toString();
     }
 
-    public static String ParasTitle(String html){
+    public  String ParasTitle(String html){
 
         StringBuffer title = new StringBuffer();
         Document dom = Jsoup.parse(html);
@@ -58,9 +58,10 @@ public class HtmlParserTool {
         return title.toString();
     }
 
-    public static Result getResult(String url){
+    public  Result getResult(String url){
         Result result = new Result();
-        String html = DownLoadFile.downloadHtml(url);
+        DownLoadFile downLoadFile = new DownLoadFile();
+        String html = downLoadFile.downloadHtml(url);
         result.setContext(ParasContext(html));
         result.setTitle(ParasTitle(html));
         result.setUrlLink(ParserLink(html));

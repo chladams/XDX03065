@@ -19,9 +19,9 @@ import static java.lang.System.out;
  */
 public class DownLoadFile {
 
-    public static CloseableHttpClient httpClient = HttpClients.custom().build();
+    public CloseableHttpClient httpClient = HttpClients.custom().build();
 
-    public static String downloadHtml(String url) {
+    public String downloadHtml(String url) {
 
         CloseableHttpResponse response;
         BufferedReader br=null;
