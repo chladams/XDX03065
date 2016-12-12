@@ -45,7 +45,6 @@ public class DataCRUD {
         return resultSet;
     }
 
-
     public static void ReleaseConnection() {                                                 //释放数据链接
         try {
             if(connection!=null) {

@@ -13,8 +13,9 @@ public class BaiduBaike extends JFrame{
     public ManagerCrawler managerCrawler = new ManagerCrawler();
 
     public void launch(String url){
-        managerCrawler.initial(url);
-        managerCrawler.start();
+        managerCrawler.initial(url).start();
     }
+
+
 
 }
