@@ -1,3 +1,4 @@
+set names utf8;
 CREATE database Crawl;
 use Crawl;
 CREATE TABLE text

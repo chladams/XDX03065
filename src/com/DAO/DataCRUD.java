@@ -33,7 +33,7 @@ public class DataCRUD {
     }
 
     public static ResultSet Query() {                                                  //读取查询
-        String sql = "SELECT * FROM text;";                                          //按照分数大小降序排列
+        String sql = " SELECT * FROM text;";                                          //按照分数大小降序排列
         connection = new DBUtil().openConnection();
         try {
             preparedStatement = connection.prepareStatement(sql);
